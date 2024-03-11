@@ -1,0 +1,6 @@
+**.DS_Store
+**.venv
+**pw-config.ini
+**/.vscode 
+.env
+__pycache__
