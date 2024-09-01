@@ -41,6 +41,73 @@ The dataset `TAM_DEF.xlsx` contains 870 responses from a survey aimed at assessi
 
 This dataset provides a robust foundation for analyzing how different demographic factors and perceptions influence the adoption and usage of AI technologies.
 
+## Models
+
+The `Models.ipynb` notebook in this repository contains the key models used for analysis in this study. These models include:
+
+### 1. Exploratory Regression Models
+
+The exploratory regression models test different sets of independent variables (`X` variables) against the dependent variable (`Y` variable), which represents AI usage in different contexts. The general form of the regression model is:
+
+\[
+Y = eta_0 + eta_1X_1 + eta_2X_2 + \cdots + eta_nX_n + \epsilon
+\]
+
+Where:
+- \( Y \) is the dependent variable (e.g., AI Usage).
+- \( eta_0 \) is the intercept.
+- \( eta_1, eta_2, \ldots, eta_n \) are the coefficients of the independent variables \( X_1, X_2, \ldots, X_n \).
+- \( \epsilon \) is the error term.
+
+### 2. Structural Equation Models (SEM)
+
+The SEM approach models the relationships between latent variables and observed variables. In this study, SEM is used to explore how variables like trust, ease of use, training, and ethics influence AI usage.
+
+The SEM can be represented by the following set of equations:
+
+**Latent Variables:**
+\[
+	ext{Trust} \sim 	ext{VAR11\_PRIVACY\_AI\_Protect\_Data} + 	ext{VAR16\_ETHICS\_AI\_Developed\_Ethical} + 	ext{VAR25\_FAIRNESS\_AI\_Treats\_All\_Fair} + 	ext{VAR26\_FAIRNESS\_Should\_Reduce\_Bias}
+\]
+\[
+	ext{Ease\_of\_Use} \sim 	ext{VAR28\_PERSONAL\_Enhances\_Experience} + 	ext{VAR29\_PERONAL\_Improves\_CS\_quality} + 	ext{VAR21\_EXPLAIN\_clear\_descisions}
+\]
+\[
+	ext{Training} \sim 	ext{VAR06\_ED\_AI\_Training\_needed} + 	ext{VAR03\_CG\_AI\_Training\_Access} + 	ext{VAR01\_CG\_Training} + 	ext{VAR04\_CG\_AI\_Training\_helps\_skills}
+\]
+\[
+	ext{Ethics} \sim 	ext{VAR19\_ACCOUNTABILITY\_AI\_Mechanisms}
+\]
+
+**Direct Relationships with AI Usage (Dependent Variable):**
+\[
+Y_{	ext{Usage}} \sim 	ext{Trust} + 	ext{Ease\_of\_Use} + 	ext{Training} + 	ext{Ethics}
+\]
+
+**Relationships Among Latent Variables:**
+\[
+	ext{Trust} \sim 	ext{Training} + 	ext{VAR16\_ETHICS\_AI\_Developed\_Ethical} + 	ext{VAR15\_SAFETY\_AI\_protect\_Cyber\_Threats} + 	ext{VAR17\_ETHICS\_AI\_prioritize\_Human\_Wellbeing} + 	ext{VAR11\_PRIVACY\_AI\_Protect\_Data} + 	ext{VAR25\_FAIRNESS\_AI\_Treats\_All\_Fair} + 	ext{VAR26\_FAIRNESS\_Should\_Reduce\_Bias}
+\]
+
+### 3. Hypothesis Testing
+
+The hypothesis testing in the notebook is based on the results from the SEM and regression models. It tests specific hypotheses related to the influence of AI training, fairness, ethics, and personalization on AI adoption and user trust.
+
+### Exploring the Models
+
+To explore the models used in the analysis:
+
+1. **Open the Notebook:**
+   - Navigate to the `/03-notebooks/` directory and open `Models.ipynb` using Jupyter Lab or Jupyter Notebook.
+   - Example:
+     ```bash
+     jupyter notebook Models.ipynb
+     ```
+
+2. **Run the Cells:**
+   - Follow the cells in the notebook to execute the models and view the results.
+   - Each section of the notebook corresponds to a specific model or hypothesis being tested.
+
 ## Usage
 
 To replicate the analysis or explore the models, follow these steps:
