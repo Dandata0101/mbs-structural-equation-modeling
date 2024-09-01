@@ -49,33 +49,33 @@ The `Models.ipynb` notebook in this repository contains the key models used for 
 
 The exploratory regression models test different sets of independent variables (`X` variables) against the dependent variable (`Y` variable), which represents AI usage in different contexts. The general form of the regression model is:
 
-![Regression Model](path_to_your_image_folder/regression_model.png)
+![Regression Model](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/regression_model.png)
 
 ### 2. Structural Equation Models (SEM)
 
 **Trust:**
 
-![SEM Trust](path_to_your_image_folder/sem_trust.png)
+![SEM Trust](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_trust.png)
 
 **Ease of Use:**
 
-![SEM Ease of Use](path_to_your_image_folder/sem_ease_of_use.png)
+![SEM Ease of Use](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_ease_of_use.png)
 
 **Training:**
 
-![SEM Training](path_to_your_image_folder/sem_training.png)
+![SEM Training](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_training.png)
 
 **Ethics:**
 
-![SEM Ethics](path_to_your_image_folder/sem_ethics.png)
+![SEM Ethics](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_ethics.png)
 
 **Direct Relationships with AI Usage:**
 
-![SEM Usage](path_to_your_image_folder/sem_usage.png)
+![SEM Usage](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_usage.png)
 
 **Relationships Among Latent Variables:**
 
-![SEM Trust Relationships](path_to_your_image_folder/sem_trust_relationships.png)
+![SEM Trust Relationships](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/05-model-images/sem_trust_relationships.png)
 
 ### 3. Hypothesis Testing
 
