@@ -49,45 +49,33 @@ The `Models.ipynb` notebook in this repository contains the key models used for 
 
 The exploratory regression models test different sets of independent variables (`X` variables) against the dependent variable (`Y` variable), which represents AI usage in different contexts. The general form of the regression model is:
 
-\[
-Y = eta_0 + eta_1X_1 + eta_2X_2 + \cdots + eta_nX_n + \epsilon
-\]
-
-Where:
-- \( Y \) is the dependent variable (e.g., AI Usage).
-- \( eta_0 \) is the intercept.
-- \( eta_1, eta_2, \ldots, eta_n \) are the coefficients of the independent variables \( X_1, X_2, \ldots, X_n \).
-- \( \epsilon \) is the error term.
+![Regression Model](path_to_your_image_folder/regression_model.png)
 
 ### 2. Structural Equation Models (SEM)
 
-The SEM approach models the relationships between latent variables and observed variables. In this study, SEM is used to explore how variables like trust, ease of use, training, and ethics influence AI usage.
+**Trust:**
 
-The SEM can be represented by the following set of equations:
+![SEM Trust](path_to_your_image_folder/sem_trust.png)
 
-**Latent Variables:**
-\[
-	ext{Trust} \sim 	ext{VAR11\_PRIVACY\_AI\_Protect\_Data} + 	ext{VAR16\_ETHICS\_AI\_Developed\_Ethical} + 	ext{VAR25\_FAIRNESS\_AI\_Treats\_All\_Fair} + 	ext{VAR26\_FAIRNESS\_Should\_Reduce\_Bias}
-\]
-\[
-	ext{Ease\_of\_Use} \sim 	ext{VAR28\_PERSONAL\_Enhances\_Experience} + 	ext{VAR29\_PERONAL\_Improves\_CS\_quality} + 	ext{VAR21\_EXPLAIN\_clear\_descisions}
-\]
-\[
-	ext{Training} \sim 	ext{VAR06\_ED\_AI\_Training\_needed} + 	ext{VAR03\_CG\_AI\_Training\_Access} + 	ext{VAR01\_CG\_Training} + 	ext{VAR04\_CG\_AI\_Training\_helps\_skills}
-\]
-\[
-	ext{Ethics} \sim 	ext{VAR19\_ACCOUNTABILITY\_AI\_Mechanisms}
-\]
+**Ease of Use:**
 
-**Direct Relationships with AI Usage (Dependent Variable):**
-\[
-Y_{	ext{Usage}} \sim 	ext{Trust} + 	ext{Ease\_of\_Use} + 	ext{Training} + 	ext{Ethics}
-\]
+![SEM Ease of Use](path_to_your_image_folder/sem_ease_of_use.png)
+
+**Training:**
+
+![SEM Training](path_to_your_image_folder/sem_training.png)
+
+**Ethics:**
+
+![SEM Ethics](path_to_your_image_folder/sem_ethics.png)
+
+**Direct Relationships with AI Usage:**
+
+![SEM Usage](path_to_your_image_folder/sem_usage.png)
 
 **Relationships Among Latent Variables:**
-\[
-	ext{Trust} \sim 	ext{Training} + 	ext{VAR16\_ETHICS\_AI\_Developed\_Ethical} + 	ext{VAR15\_SAFETY\_AI\_protect\_Cyber\_Threats} + 	ext{VAR17\_ETHICS\_AI\_prioritize\_Human\_Wellbeing} + 	ext{VAR11\_PRIVACY\_AI\_Protect\_Data} + 	ext{VAR25\_FAIRNESS\_AI\_Treats\_All\_Fair} + 	ext{VAR26\_FAIRNESS\_Should\_Reduce\_Bias}
-\]
+
+![SEM Trust Relationships](path_to_your_image_folder/sem_trust_relationships.png)
 
 ### 3. Hypothesis Testing
 
