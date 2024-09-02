@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+package_models/__init__.py
+package_models/custom_var_regression.py
+package_models/regression_by_segment.py
+package_models/sem_fx.py
+x_mbs_structural_equation_modeling.egg-info/PKG-INFO
+x_mbs_structural_equation_modeling.egg-info/SOURCES.txt
+x_mbs_structural_equation_modeling.egg-info/dependency_links.txt
+x_mbs_structural_equation_modeling.egg-info/top_level.txt

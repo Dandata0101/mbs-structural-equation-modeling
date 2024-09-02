@@ -13,6 +13,8 @@ The repository is organized into the following directories:
 - **`/02-Charts/`**: Contains visual representations of the data analysis, including charts and graphs that illustrate key findings and trends.
 - **`/03-notebooks/`**: Jupyter notebooks that provide a step-by-step walkthrough of the analyses conducted.
 - **`/04-summary/`**: Output files such as regression analysis results, figures, and tables used in the final report.
+- **`/05-model-images/`**: Contains images of the models used, including regression and SEM models.
+- **`package_models/`**: This directory contains custom Python modules used in the analysis. These modules are imported into the notebooks for various data processing and model evaluation tasks.
 
 ## Datasets
 
@@ -96,7 +98,9 @@ To explore the models used in the analysis:
    - Follow the cells in the notebook to execute the models and view the results.
    - Each section of the notebook corresponds to a specific model or hypothesis being tested.
 
-## Usage
+## Setup Instructions
+
+### Cloning the Repository
 
 To replicate the analysis or explore the models, follow these steps:
 
@@ -106,19 +110,36 @@ To replicate the analysis or explore the models, follow these steps:
    cd mbs-structural-equation-modeling
    ```
 
-2. **Environment Setup**:
+### Environment Setup
+
+1. **Install Dependencies**:
    - Ensure you have Python 3.x installed along with the required libraries listed in `requirements.txt`.
    - Install the required libraries:
      ```bash
      pip install -r requirements.txt
      ```
 
-3. **Exploring the Notebooks**:
-   - Open any notebook in the `/03-notebook/` directory using Jupyter Lab or Jupyter Notebook to see the detailed analysis.
-   - Example:
+### Setting Up `package_models`
+
+If you need to use the custom Python modules located in the `package_models` directory, follow these steps to set it up:
+
+1. **Navigate to the Project Directory**:
+   - Make sure you're in the root directory of the project.
+   
+2. **Install the `package_models` Module**:
+   - Run the following command to install the module in editable mode:
      ```bash
-     jupyter notebook model.ipynb
+     pip install -e .
      ```
+   - This will make the `package_models` directory available as a Python package, allowing you to import its modules from anywhere in the project.
+
+### Exploring the Notebooks
+
+- Open any notebook in the `/03-notebook/` directory using Jupyter Lab or Jupyter Notebook to see the detailed analysis.
+- Example:
+  ```bash
+  jupyter notebook model.ipynb
+  ```
 
 ## License
 
