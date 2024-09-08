@@ -14,7 +14,7 @@ The repository is organized into the following directories:
 - **`/03-notebooks/`**: Jupyter notebooks that provide a step-by-step walkthrough of the analyses conducted.
 - **`/04-summary/`**: Output files such as regression analysis results, figures, and tables used in the final report.
 - **`/05-model-images/`**: Contains images of the models used, including regression and SEM models.
-- **`package_models/`**: This directory contains custom Python modules used in the analysis. These modules are imported into the notebooks for various data processing and model evaluation tasks.
+- **`/package_models/`**: This directory contains custom Python modules used in the analysis. These modules are imported into the notebooks for various data processing and model evaluation tasks.
 
 ## Datasets
 
@@ -97,6 +97,31 @@ To explore the models used in the analysis:
 2. **Run the Cells:**
    - Follow the cells in the notebook to execute the models and view the results.
    - Each section of the notebook corresponds to a specific model or hypothesis being tested.
+
+### Custom Python Modules
+
+The `/package_models/` directory contains additional modules for more specialized regression and SEM analysis:
+
+1. **`custom_var_regression.py`**: 
+   - Enables customized regression analysis with flexible filtering, segmentation, and independent variable selection.
+   - Example function:
+     ```python
+     custx_regression_analysis(segment_results='Y', segmentation_column='Generation', filter_column=None, pvalue_threshold=0.1)
+     ```
+
+2. **`regression_by_segment.py`**: 
+   - Focuses on segmented regression analysis, producing outputs filtered by generation or any other chosen segmentation column.
+   - Example function:
+     ```python
+     perform_regression_analysis(segment_results='Y', segmentation_column='Generation', y_column='Yvar_USE_AI_Work', pvalue_threshold=0.05)
+     ```
+
+3. **`sem_fx.py`**: 
+   - Executes SEM modeling, tailored to include custom hypotheses and data segmentation, and generates visual representations of SEM pathways.
+   - Example function:
+     ```python
+     sem_analysis(model_desc, hypothesis_criteria, dependent_variable='Yvar_USE_AI_Work', segmentation_column='Generation', p_value_threshold=0.05)
+     ```
 
 ## Setup Instructions
 
