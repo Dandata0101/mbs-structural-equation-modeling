@@ -139,7 +139,7 @@ The `/package_models/` directory contains additional modules for more specialize
 
     #### Sample Output
 
-   ![SEM Trust Relationships](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/02-charts/SEM_Visualization_entire_Dataset.png) 
+   ![SEM visual](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/02-charts/SEM_Visualization_Entire%20Dataset.png) 
 
 
 ## Setup Instructions
