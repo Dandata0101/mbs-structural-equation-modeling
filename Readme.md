@@ -137,6 +137,11 @@ The `/package_models/` directory contains additional modules for more specialize
      sem_analysis(model_desc, hypothesis_criteria, dependent_variable='Yvar_USE_AI_Work', segmentation_column='Generation', p_value_threshold=0.05)
      ```
 
+    #### Sample Output
+
+   ![SEM Trust Relationships](https://github.com/Dandata0101/mbs-structural-equation-modeling/blob/main/02-charts/SEM_Visualization_entire_Dataset.png) 
+
+
 ## Setup Instructions
 
 ### Cloning the Repository
